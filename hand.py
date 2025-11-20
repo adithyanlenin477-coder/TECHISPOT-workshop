@@ -18,7 +18,7 @@ def calculate_distance(perceived_width):
     return (KNOWN_WIDTH * FOCAL_LENGTH) / perceived_width
 
 # Start webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(2)
 
 while cap.isOpened():
     ret, frame = cap.read()
